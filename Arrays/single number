@@ -1,0 +1,9 @@
+class Solution {
+    public int singleNumber(int[] nums) {
+        int xor = 0; //we know that same number of xor is always 0 and diff. number xor is that number also;
+        for(int ele : nums){
+            xor^= ele; // example : 2 ^ 2 = 0 and 4 ^ 0 = 4;
+        }
+        return xor;
+    }
+}
