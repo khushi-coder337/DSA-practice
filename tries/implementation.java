@@ -34,3 +34,9 @@ static class Node{
         }
         return curr.eow == true;
     }
+ public static void main(String args[]){
+        String word[] = {"the","a","their","these","ate","thees"};
+        for(int i=0; i<word.length; i++){
+            insert(word[i]);
+        }
+ }
